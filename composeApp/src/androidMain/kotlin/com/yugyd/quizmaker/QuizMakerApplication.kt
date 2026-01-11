@@ -1,15 +1,16 @@
 package com.yugyd.quizmaker
 
 import android.app.Application
-import com.yugyd.quizmaker.core.AppBuildConfigImpl
+import com.yugyd.quizmaker.delegates.KoinAppDelegate
 import com.yugyd.quizmaker.delegates.LoggerAppDelegate
+import org.koin.android.ext.android.get
 
 internal class QuizMakerApplication : Application() {
 
     override fun onCreate() {
         super.onCreate()
 
-        val appBuildConfig = AppBuildConfigImpl()
-        LoggerAppDelegate(appBuildConfig).init()
+        KoinAppDelegate().init()
+        LoggerAppDelegate(get()).init()
     }
 }

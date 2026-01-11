@@ -7,7 +7,7 @@ plugins {
 }
 
 kotlin {
-    androidLibrary {
+    android {
         namespace = "com.yugyd.quizmaker.core.database"
         compileSdk = 36
         minSdk = 24
