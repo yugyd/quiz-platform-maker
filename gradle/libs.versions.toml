@@ -58,7 +58,7 @@ kotlinx-serialization-core = { module = "org.jetbrains.kotlinx:kotlinx-serializa
 # Database
 androidx-room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "androidx-room" }
 androidx-room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "androidx-room" }
-sqlite-bundled = { module = "androidx.sqlite:sqlite-bundled", version = "2.5.2" }
+sqlite-bundled = { module = "androidx.sqlite:sqlite-bundled", version = "2.6.2" }
 
 # File and local storage
 okio = { module = "com.squareup.okio:okio", version = "3.16.4" }

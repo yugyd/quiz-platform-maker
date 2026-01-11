@@ -35,6 +35,8 @@ kotlin {
         commonMain.dependencies {
             implementation(project(":product:core:logger"))
             implementation(project(":product:core:localstorage"))
+            implementation(project(":product:core:database"))
+            implementation(project(":product:core:coroutines"))
 
             implementation(compose.runtime)
             implementation(compose.foundation)
@@ -44,10 +46,6 @@ kotlin {
             implementation(compose.components.uiToolingPreview)
             implementation(libs.androidx.lifecycle.viewmodel)
             implementation(libs.androidx.lifecycle.runtimeCompose)
-        }
-        iosMain.dependencies {
-            implementation(project(":product:core:logger"))
-            implementation(project(":product:core:localstorage"))
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)
@@ -73,7 +71,12 @@ android {
     }
     buildTypes {
         getByName("release") {
-            isMinifyEnabled = false
+            isMinifyEnabled = true
+            isShrinkResources = true
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
         }
     }
     compileOptions {
