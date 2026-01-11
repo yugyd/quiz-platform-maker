@@ -7,8 +7,9 @@ struct iOSApp: App {
     init() {
         #if DEBUG
         ApplicationKt.onCreate(isDebug: true)
-        #endif
+        #else
         ApplicationKt.onCreate(isDebug: false)
+        #endif
     }
 
     var body: some Scene {

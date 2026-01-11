@@ -32,3 +32,5 @@ include(":composeApp")
 // Core
 include(":product:core:logger")
 include(":product:core:logger-api")
+include(":product:core:localstorage-api")
+include(":product:core:localstorage")

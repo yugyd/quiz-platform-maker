@@ -34,6 +34,7 @@ kotlin {
         }
         commonMain.dependencies {
             implementation(project(":product:core:logger"))
+            implementation(project(":product:core:localstorage"))
 
             implementation(compose.runtime)
             implementation(compose.foundation)
@@ -46,6 +47,7 @@ kotlin {
         }
         iosMain.dependencies {
             implementation(project(":product:core:logger"))
+            implementation(project(":product:core:localstorage"))
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)
