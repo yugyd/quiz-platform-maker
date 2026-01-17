@@ -41,15 +41,19 @@ kotlin {
             implementation(project(":product:core:localstorage"))
             implementation(project(":product:core:database"))
             implementation(project(":product:core:coroutines"))
+            implementation(project(":product:core:navigation"))
+            implementation(project(":product:main-ui"))
+
+            // Navigation
+            implementation(libs.navigation.compose)
+
+            // Kotlin
+            implementation(libs.kotlin.stdlib)
 
             implementation(compose.runtime)
             implementation(compose.foundation)
             implementation(compose.material3)
-            implementation(compose.ui)
-            implementation(compose.components.resources)
             implementation(compose.components.uiToolingPreview)
-            implementation(libs.androidx.lifecycle.viewmodel)
-            implementation(libs.androidx.lifecycle.runtimeCompose)
 
             // DI
             implementation(libs.koin.core)

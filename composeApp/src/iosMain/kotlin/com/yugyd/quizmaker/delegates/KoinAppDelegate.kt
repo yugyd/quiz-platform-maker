@@ -1,6 +1,5 @@
 package com.yugyd.quizmaker.delegates
 
-import com.yugyd.quizmaker.AppDelegate
 import com.yugyd.quizmaker.di.appModule
 import org.koin.core.context.startKoin
 

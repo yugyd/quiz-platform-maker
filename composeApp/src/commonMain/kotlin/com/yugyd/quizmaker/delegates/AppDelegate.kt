@@ -1,4 +1,4 @@
-package com.yugyd.quizmaker
+package com.yugyd.quizmaker.delegates
 
 interface AppDelegate {
     fun init()

@@ -1,6 +1,5 @@
 package com.yugyd.quizmaker.delegates
 
-import com.yugyd.quizmaker.AppDelegate
 import com.yugyd.quizmaker.api.AppBuildConfig
 import com.yugyd.quizmaker.core.logger.LoggerInitializerImpl
 
