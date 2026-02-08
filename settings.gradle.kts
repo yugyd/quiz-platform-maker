@@ -31,6 +31,8 @@ dependencyResolutionManagement {
 include(":composeApp")
 include(":androidApp")
 // Core
+include(":product:core:designsystem-icons")
+include(":product:core:designsystem-components")
 include(":product:core:logger")
 include(":product:core:logger-api")
 include(":product:core:localstorage-api")

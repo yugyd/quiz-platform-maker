@@ -1,0 +1,7 @@
+<resources>
+    <string name="ds_components_content_description_icon_navigation_back">Back</string>
+    <string name="ds_error_base">Something went wrong</string>
+    <string name="ds_empty_state_title">Oops, no data</string>
+    <string name="ds_empty_state_description">Try reloading the screen</string>
+    <string name="ds_empty_state_retry">Retry</string>
+</resources>
