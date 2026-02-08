@@ -3,7 +3,7 @@ package com.yugyd.quizmaker.delegates
 import com.yugyd.quizmaker.api.AppBuildConfig
 import com.yugyd.quizmaker.core.logger.LoggerInitializerImpl
 
-internal class LoggerAppDelegate(
+class LoggerAppDelegate(
     private val appBuildConfig: AppBuildConfig,
 ) : AppDelegate {
 

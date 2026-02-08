@@ -29,6 +29,7 @@ dependencyResolutionManagement {
 }
 
 include(":composeApp")
+include(":androidApp")
 // Core
 include(":product:core:logger")
 include(":product:core:logger-api")

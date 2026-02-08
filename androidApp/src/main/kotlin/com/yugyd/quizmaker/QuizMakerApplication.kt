@@ -5,7 +5,7 @@ import com.yugyd.quizmaker.delegates.KoinAppDelegate
 import com.yugyd.quizmaker.delegates.LoggerAppDelegate
 import org.koin.android.ext.android.get
 
-internal class QuizMakerApplication : Application() {
+class QuizMakerApplication : Application() {
 
     override fun onCreate() {
         super.onCreate()

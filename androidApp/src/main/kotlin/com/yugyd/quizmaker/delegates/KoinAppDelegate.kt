@@ -4,7 +4,7 @@ import com.yugyd.quizmaker.di.appModule
 import com.yugyd.quizmaker.di.platformModule
 import org.koin.core.context.startKoin
 
-internal class KoinAppDelegate() : AppDelegate {
+class KoinAppDelegate() : AppDelegate {
 
     override fun init() {
         startKoin {
