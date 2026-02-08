@@ -1,14 +1,15 @@
+import org.jetbrains.kotlin.gradle.dsl.JvmTarget
+
 plugins {
     alias(libs.plugins.kotlinMultiplatform)
-    alias(libs.plugins.androidKmpLibrary)
     alias(libs.plugins.androidLint)
 }
 
 kotlin {
-    androidLibrary {
-        namespace = "com.yugyd.quizmaker.core.database.api"
-        compileSdk = 36
-        minSdk = 24
+    jvm {
+        compilerOptions {
+            jvmTarget.set(JvmTarget.JVM_11)
+        }
     }
 
     iosX64()

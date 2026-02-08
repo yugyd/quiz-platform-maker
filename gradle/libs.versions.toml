@@ -24,8 +24,13 @@ firebaseKotlin = "2.4.0"
 runner = "1.7.0"
 core = "1.7.0"
 navigation = "1.0.0"
+viewmodeldelegates = "0.3.0"
 
 [libraries]
+# Core
+viewmodeldelegates = { module = "com.yugyd.viewmodeldelegates:viewmodeldelegates", version.ref = "viewmodeldelegates" }
+viewmodeldelegates-ui = { module = "com.yugyd.viewmodeldelegates:viewmodeldelegates-ui", version.ref = "viewmodeldelegates" }
+
 # Kotlin
 kotlin-stdlib = { group = "org.jetbrains.kotlin", name = "kotlin-stdlib", version.ref = "kotlin" }
 kotlinx-collections = { module = "org.jetbrains.kotlinx:kotlinx-collections-immutable", version = "0.4.0" }
@@ -89,6 +94,7 @@ koin-android = { module = "io.insert-koin:koin-android", version.ref = "koin" }
 koin-compose = { module = "io.insert-koin:koin-compose", version.ref = "koin" }
 koin-compose-viewmodel = { module = "io.insert-koin:koin-compose-viewmodel", version.ref = "koin" }
 koin-compose-viewmodel-nav = { module = "io.insert-koin:koin-compose-viewmodel-navigation", version.ref = "koin" }
+koin-compose-nav = { module = "io.insert-koin:koin-compose-navigation3", version.ref = "koin" }
 
 # Image
 coil-bom = { module = "io.coil-kt.coil3:coil-bom", version = "3.3.0" }

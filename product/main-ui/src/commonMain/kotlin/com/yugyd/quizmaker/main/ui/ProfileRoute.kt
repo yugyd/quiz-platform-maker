@@ -15,12 +15,13 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.tooling.preview.Preview
 import org.jetbrains.compose.resources.painterResource
 import quizmaker.product.main_ui.generated.resources.Res
 import quizmaker.product.main_ui.generated.resources.compose_multiplatform
 
 @Composable
-fun ProfileRoute() {
+fun ProfileScreen() {
     var showContent by remember { mutableStateOf(false) }
 
     Column(
@@ -43,4 +44,10 @@ fun ProfileRoute() {
             }
         }
     }
+}
+
+@Preview
+@Composable
+fun ProfileScreenPreview() {
+    ProfileScreen()
 }

@@ -2,6 +2,9 @@ package com.yugyd.quizmaker.di
 
 fun appModule() = listOf(
     loggerModule,
+    mvvmLibraryModule,
     threadingModule,
-    createStorageModule()
+    createStorageModule(),
+    createNetworkModule(),
 )
+    .plus(featuresModule)

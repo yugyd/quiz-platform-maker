@@ -2,7 +2,7 @@ package com.yugyd.quizmaker.core.navigation
 
 import androidx.navigation3.runtime.NavKey
 
-class Navigator(
+class QuizMakerNavigator(
     val state: NavigationState,
 ) {
 

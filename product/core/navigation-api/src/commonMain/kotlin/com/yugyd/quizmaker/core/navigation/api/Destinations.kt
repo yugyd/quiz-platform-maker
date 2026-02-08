@@ -6,7 +6,10 @@ import kotlinx.serialization.Serializable
 sealed interface RootNavKey : NavKey
 
 @Serializable
-data object Home : RootNavKey
+data object HomeRoute : RootNavKey
 
 @Serializable
-data object Profile : RootNavKey
+data object ProfileRoute : RootNavKey
+
+@Serializable
+data class ContentRoute(val itemId: String) : NavKey

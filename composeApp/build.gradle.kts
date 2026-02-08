@@ -43,7 +43,9 @@ kotlin {
             implementation(project(":product:core:database"))
             implementation(project(":product:core:coroutines"))
             implementation(project(":product:core:navigation"))
+            implementation(project(":product:core:network"))
             implementation(project(":product:main-ui"))
+            implementation(project(":product:content-ui"))
 
             // Navigation
             implementation(libs.navigation.compose)
@@ -58,6 +60,9 @@ kotlin {
 
             // DI
             implementation(libs.koin.core)
+
+            // Mvvm
+            implementation(libs.viewmodeldelegates)
         }
         iosMain.dependencies {
             // DI

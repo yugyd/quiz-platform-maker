@@ -17,8 +17,9 @@ import androidx.navigation3.runtime.rememberNavBackStack
 import androidx.navigation3.runtime.rememberSaveableStateHolderNavEntryDecorator
 import androidx.savedstate.compose.serialization.serializers.MutableStateSerializer
 import androidx.savedstate.serialization.SavedStateConfiguration
-import com.yugyd.quizmaker.core.navigation.api.Home
-import com.yugyd.quizmaker.core.navigation.api.Profile
+import com.yugyd.quizmaker.core.navigation.api.ContentRoute
+import com.yugyd.quizmaker.core.navigation.api.HomeRoute
+import com.yugyd.quizmaker.core.navigation.api.ProfileRoute
 import kotlinx.serialization.PolymorphicSerializer
 import kotlinx.serialization.modules.SerializersModule
 import kotlinx.serialization.modules.polymorphic
@@ -26,8 +27,9 @@ import kotlinx.serialization.modules.polymorphic
 private val config = SavedStateConfiguration {
     serializersModule = SerializersModule {
         polymorphic(NavKey::class) {
-            subclass(Home::class, Home.serializer())
-            subclass(Profile::class, Profile.serializer())
+            subclass(HomeRoute::class, HomeRoute.serializer())
+            subclass(ProfileRoute::class, ProfileRoute.serializer())
+            subclass(ContentRoute::class, ContentRoute.serializer())
         }
     }
 }

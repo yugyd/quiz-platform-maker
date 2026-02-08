@@ -23,10 +23,11 @@ import quizmaker.product.main_ui.generated.resources.Res
 import quizmaker.product.main_ui.generated.resources.compose_multiplatform
 
 @Composable
-fun HomeRoute(
-    goToProfile: () -> Unit,
+fun HomeScreen(
+    goToContent: (String) -> Unit,
 ) {
     var showContent by remember { mutableStateOf(false) }
+
     Column(
         modifier = Modifier
             .safeContentPadding()
@@ -35,7 +36,7 @@ fun HomeRoute(
     ) {
         Button(
             onClick = {
-                goToProfile()
+                goToContent("1")
             },
         ) {
             Text("Go to Profile")

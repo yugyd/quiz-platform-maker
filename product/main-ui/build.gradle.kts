@@ -28,7 +28,7 @@ kotlin {
 
     sourceSets {
         androidMain.dependencies {
-            implementation(compose.preview)
+            // Compose
             implementation(libs.androidx.activity.compose)
 
             // DI
@@ -38,13 +38,15 @@ kotlin {
         commonMain {
             dependencies {
                 implementation(project(":product:core:navigation"))
+                implementation(project(":product:content-ui"))
+                implementation(project(":product:core:designsystem-components"))
 
                 implementation(compose.runtime)
                 implementation(compose.foundation)
                 implementation(compose.material3)
                 implementation(compose.ui)
                 implementation(compose.components.resources)
-                implementation(compose.components.uiToolingPreview)
+                implementation(libs.ui.tooling.preview)
                 implementation(libs.androidx.lifecycle.viewmodel)
                 implementation(libs.androidx.lifecycle.runtimeCompose)
 
@@ -57,4 +59,8 @@ kotlin {
             }
         }
     }
+}
+
+dependencies {
+    androidRuntimeClasspath(libs.ui.tooling)
 }
